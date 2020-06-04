@@ -5,6 +5,8 @@ Module documentation.
 
 # Imports
 import sys
+from objects.card import Card
+from objects.deck import Deck
 
 # Global variables
 
@@ -28,6 +30,8 @@ def main():
         sys.exit(1)
 
     printCards()
+    deck = Deck()
+    print(len(deck.cards))
 
 # Main body
 if __name__ == '__main__':
